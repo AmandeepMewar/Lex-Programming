@@ -1,0 +1,3 @@
+gcc lex.yy.c -lm
+
+to link math file
