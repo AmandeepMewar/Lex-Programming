@@ -9,7 +9,7 @@ int|float|if|else|return|printf { k++; printf("Keyword: %s\n", yytext); }
 [_a-zA-Z][_a-zA-Z0-9]* { i++; printf("Identifier: %s\n", yytext); }
 [0-9]+ { c++; printf("Constant: %s\n", yytext); }
 [*-+/=><%]|"<="|">="|"!=" { o++; printf("Operator: %s\n", yytext); }
-[,;{}():.[]] { p++; printf("Punctuators: %s\n", yytext); }
+[,;{}():.] { p++; printf("Punctuators: %s\n", yytext); }
 . |;
 %%
 
