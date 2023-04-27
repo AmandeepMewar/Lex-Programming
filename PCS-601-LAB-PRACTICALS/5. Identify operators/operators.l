@@ -13,6 +13,7 @@ int a = 0, r = 0, l = 0;
 %%
 
 int main(){
+	printf("Enter input:");
 	yylex();
 	printf("Arithmetic Operators = %d\nRelational Operators = %d\nlogical Operators = %d\n", a, r, l);
 }
